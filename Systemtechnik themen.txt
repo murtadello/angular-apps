@@ -1,0 +1,21 @@
+network
+
+iso/osi layer
+ip subnetting
+dns
+how the internet works
+
+
+
+befehle
+ping
+tracert
+nsloop
+
+
+backup
+gvs grossvater vater sohn
+inkrementell, delta, full
+
+active directory
+azure ad
