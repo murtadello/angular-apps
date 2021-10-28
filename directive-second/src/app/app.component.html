@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="row">
+    <button 
+    *ngIf="!contentHighlighted" 
+    (click) ="contentHighlighted = true">
+    Highlight Content
+    </button>
+    <button
+    *ngIf ="contentHighlighted" 
+    (click)="contentHighlighted = false">
+    Un-highlight Content
+    </button>
+    <h1>Content</h1>
+    <p [ngClass]="{highlighted: contentHighlighted}">KMU-Informatik bietet seit der Gründung durch Dr. sc. techn. Mathias Götsch im Jahre 2000 optimale IT Lösungen für KMU Unternehmen. 
+      Unsere IT Spezialisten sind allesamt ausgewiesene Berufsfachleute. Als ETH Spin-off ist uns nicht nur der Einsatz neuster Technologien, 
+      sondern auch die Bildung wichtig. Deshalb ist ein Grossteil unserer Spezialisten dabei einen Hochschulabschluss zu erwerben. Wir sind ein 
+      dynamisches und eingespieltes Team. Dank kurzen Prozessen und grossem Gestaltungsraum finden unsere IT Spezialisten rasch unkonventionelle 
+      und bedürfnisorientierte Lösungen. Unsere Kunden haben persönliche Ansprechspartner, denn der Kontakt ist uns wichtig. Viele unserer 
+      Mitarbeiter arbeiten 
+      über Jahre hinweg für Ihre Kunden. Im Zentrum all unserer Bemühungen steht die effiziente Umsetzung und Betreuung von IT Projekten.</p>
+  </div>
+
+
+  <div class="row">
+    <h4>NgIf</h4>
+    <ul *ngFor ="let person of people">
+      <li *ngIf="person.age < 30">{{person.name}} ({{person.age}})</li>
+    </ul>
+  </div>
+
+
+
+  <div class="row">
+    <h2>Switch directives</h2>
+    <ul *ngFor = "let person of people" [ngSwitch] ="person.country"> 
+      <li *ngSwitchCase = "'UK'"  class="text-success">{{person.name}} ({{person.country}})</li>
+      <li *ngSwitchCase = "'USA'" class="text-primary">{{person.name}} ({{person.country}})</li>
+      <li *ngSwitchCase = "'HK'"  class="text-danger">{{person.name}} ({{person.country}})</li>
+      <li *ngSwitchDefault class="text-warning">{{person.name}} ({{person.country}})</li>
+      
+    </ul>
+  </div>
+
+  <div class="row">
+    <h1>MouseOver</h1>
+    <p [ngClass] = "{available:isAvailable, unavailable : !isAvailable}">KMU-Informatik bietet seit der Gründung durch Dr. sc. techn. Mathias Götsch im Jahre 2000 optimale IT Lösungen für KMU Unternehmen. 
+      Unsere IT Spezialisten sind allesamt ausgewiesene Berufsfachleute. Als ETH Spin-off ist uns nicht nur der Einsatz neuster Technologien, 
+      sondern auch die Bildung wichtig. Deshalb ist ein Grossteil unserer Spezialisten dabei einen Hochschulabschluss zu erwerben. Wir sind ein 
+      dynamisches und eingespieltes Team. Dank kurzen Prozessen und grossem Gestaltungsraum finden unsere IT Spezialisten rasch unkonventionelle 
+      und bedürfnisorientierte Lösungen. Unsere Kunden haben persönliche Ansprechspartner, denn der Kontakt ist uns wichtig. Viele unserer 
+      Mitarbeiter arbeiten 
+      über Jahre hinweg für Ihre Kunden. Im Zentrum all unserer Bemühungen steht die effiziente Umsetzung und Betreuung von IT Projekten.</p>
+  </div>
+</div>

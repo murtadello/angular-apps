@@ -1,0 +1,14 @@
+.highlighted{
+    outline: 1px solid #fd9696;
+    background-color: #fdfd96;
+  }
+
+  .mouseoverevent{
+      background-color: orangered;
+  }
+  .available{
+      color: greenyellow;
+  }
+  .unavailable{
+      color: red;
+  }

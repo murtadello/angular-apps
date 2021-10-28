@@ -1,0 +1,10 @@
+h1{
+    font-family: sans-serif;
+    background-color: aquamarine;
+}
+p{
+    border: brown;
+    background-color: chartreuse;
+    border-color: black;
+    margin: 5px;
+}

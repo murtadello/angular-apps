@@ -1,7 +1,9 @@
 import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
-import { Component, OnInit ,EventEmitter, Output} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 import { Recipe } from '../recipe.model';
+import { RecipeService } from '../recipe.service';
 
 @Component({
   selector: 'app-recipes-list',
@@ -9,18 +11,19 @@ import { Recipe } from '../recipe.model';
   styleUrls: ['./recipes-list.component.css']
 })
 export class RecipesListComponent implements OnInit {
-  @Output() recipeWasSelected = new EventEmitter<Recipe>();
-  recipes: Recipe[] = [
-    new Recipe ('A Test Recipe', 'This is simply a test', 'https://static.onecms.io/wp-content/uploads/sites/9/2021/02/12/roast-chicken-with-chile-basil-vinaigrette-charred-broccoli-potatoes-FT-RECIPE0321.jpg'),
-    new Recipe ('A Test Recipe', 'This is simply a test', 'https://static.onecms.io/wp-content/uploads/sites/9/2021/02/12/roast-chicken-with-chile-basil-vinaigrette-charred-broccoli-potatoes-FT-RECIPE0321.jpg')
-  ];
+  
+  recipes: Recipe[];
 
-  constructor() { }
+  constructor(private recipeService: RecipeService, private router: Router, private route: ActivatedRoute) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    this.recipes = this.recipeService.getRecipes();
   }
-  onRecipeSelected(recipe: Recipe){
-    this.recipeWasSelected.emit(recipe);
+
+  onNewRecipe(){
+    this.router.navigate(['new'], {relativeTo:this.route});
+
   }
+  
 
 }
