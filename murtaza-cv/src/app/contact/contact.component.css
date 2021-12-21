@@ -1,5 +1,65 @@
-@import "~bootstrap/dist/css/bootstrap.css";
-
-.form-control.ng-touched-ng-invalid {
-    border: 1px solid red;
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "image image image"
+        "box box2 box3";
+    grid-gap: 0.2rem;
+    font-family: sans-serif;
+   
 }
+
+.image{
+    grid-area: image;
+}
+.boxes{
+    margin-top: 20px;
+    grid-area: box;
+    background-color: black;
+    color: white;
+    
+}
+image, img{
+    width: 1000px;
+}
+
+.image, h1{
+    text-align: center;
+}
+
+.boxes2{
+    margin-top: 20px;
+    grid-area: box2;
+    background-color: black;
+    color: white;
+    
+}
+.boxes3{
+    margin-top: 20px;
+   background-color: black;
+   color: white;
+    grid-area: box3;   
+}
+
+h4, strong{
+    padding: 25px;
+}
+
+.boxes3:hover{
+    background-color: #2F4F4F;
+    color: white;
+    border-radius: 10px;
+
+}
+.boxes2:hover{
+    background-color: #2F4F4F;
+    color: white;
+    border-radius: 10px;
+}
+.boxes:hover{
+    background-color: #2F4F4F;
+    color: white;
+    border-radius: 10px;
+
+}
+
