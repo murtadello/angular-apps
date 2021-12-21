@@ -13,7 +13,8 @@ import { TodoComponent } from './todo/todo.component';
     PageComponent,
     PagelayoutComponent,
     EasyteachComponent,
-    TodoComponent
+    TodoComponent,
+    
   ],
   imports: [
     BrowserModule

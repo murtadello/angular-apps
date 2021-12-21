@@ -1,15 +1,38 @@
 .container{
+    border: 2px solid black;
     display: grid;
-    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr
-                        0.1fr;
-    height: 100vh;
+    margin-right: 100px;
+    width: 300px;
+    grid-template-columns: 0.2fr 0.5fr ;
+    grid-template-rows: 0.5fr 2fr;
     grid-gap: 0.2rem;
     grid-template-areas:
-    "weekday weekday weekday weekday weekday"
-    "textbox1 textbox2 textbox3 textbox4 "
+    "text apptime "
+    "text textbox"
+    "text textbox"
     
     
 }
+#textarea{
+    border-radius: 5px;
+    height: 90px;
+    overflow: none;
+    resize: none;
+    grid-area: textbox ;
+    width: 260px;
+}
+
+#textbox1{
+    background-color: coral;
+    grid-area: text;
+}   
+
+#appt-time{
+    grid-area: apptime;
+    margin-left: 200px;
+    border: none;
+}
+
+
 
 

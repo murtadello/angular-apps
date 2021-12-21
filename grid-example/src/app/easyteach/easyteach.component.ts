@@ -12,4 +12,6 @@ export class EasyteachComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public value: Date = new Date(2000, 2, 10, 10, 30, 0);
+
 }

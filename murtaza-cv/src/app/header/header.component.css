@@ -1,0 +1,17 @@
+.nav-tabs{
+    background-color: #050505;
+    padding: 25px;
+    
+}
+a{
+    font-weight: bold;
+    font-family: sans-serif;
+    color: white;
+    text-transform: uppercase;
+    
+}
+
+a:hover{
+    cursor: pointer;    
+}
+

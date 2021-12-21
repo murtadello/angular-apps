@@ -1,0 +1,40 @@
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 3fr;
+    grid-template-areas:
+        "parag parag parag"
+        "number email website"
+        "button button button";
+    margin-top: 25px;
+    background-color:#000000 ;
+    color: white;
+}
+h1,p{
+    text-align: center;
+}
+.para{
+    grid-area: parag;
+  
+}
+.number{
+    grid-area: number;
+    text-align: center;
+}
+
+.email{
+    grid-area: email;
+    text-align: center;
+}
+
+.website{
+    grid-area: website;
+    text-align: center;
+}
+.button{
+    grid-area: button;
+    color: black;
+    text-align: center;
+    margin-bottom: 25px;
+    border-radius: 25px;
+}

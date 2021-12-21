@@ -1,0 +1,78 @@
+.container{
+    
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "image paragraph"
+        "image   skills"
+        "image skills"
+        "image skills";
+
+    
+}
+
+.image{
+    
+    padding: 25px;
+    grid-area: image;
+}
+img{
+    width: 550px;
+}
+.para{
+    
+    padding: 25px;
+    grid-area: paragraph;
+}
+.skills{
+    padding: 25px;
+    grid-area: skills;
+    
+}
+
+
+
+/* Ende Layout about me */
+
+.experien-container{
+    margin-left: 220px;
+    margin-right: 220px;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    
+    "experience education"
+    "experience education"
+    "experience education"
+    "experience education"
+    "experience education";
+    
+}
+
+.experience{
+    grid-area: experience;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.education{
+    grid-area: education;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+.experience {
+    margin-right: 25px;
+}
+h5{
+    background-color: black;
+    color: white;
+    padding: 2px;
+}
+

@@ -1,0 +1,126 @@
+.container {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-areas: 
+   
+    "parag parag parag"
+    "graphics development language"
+    "computer-graphic networking assembly"
+    ;
+    grid-gap: 1rem;
+     
+}
+
+.para{
+    text-align: center;
+    grid-area: parag;
+    padding-left: 10px;
+    
+}
+
+.graphics{
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    grid-area: graphics;
+    padding-left: 10px;
+    background-color: #F0FFFF;
+}
+
+.development{
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    grid-area: development;
+    padding-left: 10px;
+    background-color: #F0F8FF;
+}
+.programmin{
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    grid-area: language;
+    padding-left: 10px;
+    background-color: #F8F8FF;
+}
+img{
+    width: 350px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+.assembly{
+    grid-area: assembly;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: #F5F5F5;
+    padding-left: 10px;
+}
+
+.networking{
+    grid-area: networking;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: #FFF8DC;
+    padding-left: 10px;
+}
+
+.computer-graphic{
+    grid-area: computer-graphic;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: #FDF5E6;
+    padding-left: 10px;
+}
+
+.graphics:hover{
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    font-weight: bold;
+
+}
+.development:hover{
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    font-weight: bold;
+
+}
+.programmin:hover{
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    font-weight: bold;
+    
+}
+.assembly:hover{
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    font-weight: bold;
+
+}
+
+.networking:hover{
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    font-weight: bold;
+
+}
+.computer-graphic:hover{
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    font-weight: bold;
+    
+}
+
+
+
