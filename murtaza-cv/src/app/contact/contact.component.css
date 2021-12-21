@@ -17,6 +17,7 @@
     grid-area: box;
     background-color: black;
     color: white;
+    border-radius: 10px;
     
 }
 image, img{
@@ -32,11 +33,13 @@ image, img{
     grid-area: box2;
     background-color: black;
     color: white;
+    border-radius: 10px;
     
 }
 .boxes3{
     margin-top: 20px;
    background-color: black;
+   border-radius: 10px;
    color: white;
     grid-area: box3;   
 }

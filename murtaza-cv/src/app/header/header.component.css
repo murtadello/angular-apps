@@ -1,12 +1,12 @@
 .nav-tabs{
-    background-color: #050505;
+
     padding: 25px;
     
 }
 a{
     font-weight: bold;
     font-family: sans-serif;
-    color: white;
+    color: black;
     text-transform: uppercase;
     
 }

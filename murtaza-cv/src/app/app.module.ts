@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { ImagesliderComponent } from './imageslider/imageslider.component';
+
 import { AboutmeComponent } from './aboutme/aboutme.component';
 
 import { ServiceComponent } from './service/service.component';
@@ -18,7 +18,6 @@ import { FooterComponent } from './footer/footer.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    ImagesliderComponent,
     AboutmeComponent,
     ServiceComponent,
     ContactComponent,
