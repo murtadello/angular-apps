@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./service.component.css']
 })
 export class ServiceComponent implements OnInit {
+  showImage: boolean = false;
 
   constructor() { }
 
@@ -13,3 +14,9 @@ export class ServiceComponent implements OnInit {
   }
 
 }
+
+
+
+
+
+

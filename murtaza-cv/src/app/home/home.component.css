@@ -19,6 +19,7 @@
 }
 img{
     width: 550px;
+    border-radius: 10px;
 }
 .para{
     
@@ -71,8 +72,16 @@ img{
     margin-right: 25px;
 }
 h5{
-    background-color: black;
+    background-color: rgb(71, 71, 199);
     color: white;
-    padding: 2px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+h3,h4{
+    background-color: rgb(71, 71, 199);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
 }
 

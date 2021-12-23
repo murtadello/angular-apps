@@ -1,68 +1,35 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import {map} from 'rxjs/operators'
-import { Post } from './post.model';
-import { PostService } from './posts.service';
-import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit, OnDestroy{
-  loadedPosts: Post[] = [];
-  isFetching = false;
-  error = null;
-  private errorSub : Subscription;
+export class AppComponent implements OnInit {
+  loadedPosts = [];
 
-  constructor(private http: HttpClient, private postsService: PostService) {}
+  constructor(private http: HttpClient) {}
 
-  ngOnInit() {
-    this.errorSub = this.postsService.error.subscribe(errorMessage =>{
-      this.error = errorMessage;
-    });
-    this.isFetching = true;
-    this.postsService.fetchPosts().subscribe(post =>{
-      this.isFetching = false;
-      this.loadedPosts = post;
+  ngOnInit() {}
 
-    },error =>{
-      this.error = error.message;
-      console.log(error);
-      
-    });
-  }
-
-  onCreatePost(postData: Post) {
+  onCreatePost(postData: { title: string; content: string }) {
     // Send Http request
-    this.postsService.createAndStorePost(postData.title, postData.content);
-    
+    this.http
+      .post(
+        'https://ng-complete-guide-c56d3.firebaseio.com/posts.json',
+        postData
+      )
+      .subscribe(responseData => {
+        console.log(responseData);
+      });
   }
 
   onFetchPosts() {
     // Send Http request
-    this.isFetching = true;
-    this.postsService.fetchPosts().subscribe(post =>{
-      this.isFetching = false;
-      this.loadedPosts = post;
-
-    }, error =>{
-      this.error = error.message;
-    });
   }
 
   onClearPosts() {
     // Send Http request
-    this.postsService.deletePost().subscribe(() => {
-      this.loadedPosts = [];
-    });
   }
-
-  ngOnDestroy(){
-    this.errorSub.unsubscribe();
-
-  }
-
-  
 }

@@ -1,77 +1,72 @@
+
+#header{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../../assets/kontakt.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
+.user-box{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+
+
+}
+.user-box img{
+    border-radius: 50%;
+    width: 250px;
+    border: 2px solid #fff;
+
+}
+.user-box h1{
+    color:#fff;
+    font-weight: bold;
+    margin: 10px;
+
+}
+.user-box p{
+    color: #fff;
+
+}
+
+
 .container{
+    
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-        "image image image"
-        "box box2 box3";
-    grid-gap: 0.2rem;
-    font-family: sans-serif;
-   
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "adress general";
 }
 
-.image{
-    grid-area: image;
-}
-.boxes{
-    margin-top: 20px;
-    grid-area: box;
-    background-color: black;
-    color: white;
-    border-radius: 10px;
-    
-}
-image, img{
-    width: 1000px;
-}
-
-.image, h1{
+.adress{
+    background-color: #c32e4c;
     text-align: center;
-}
-
-.boxes2{
-    margin-top: 20px;
-    grid-area: box2;
-    background-color: black;
-    color: white;
+    margin-top: 15px;
+    border: 1px solid black;
+    padding: 50px;
+    justify-content: center;
+    grid-area: adress;
     border-radius: 10px;
-    
-}
-.boxes3{
-    margin-top: 20px;
-   background-color: black;
-   border-radius: 10px;
-   color: white;
-    grid-area: box3;   
-}
-
-h4, strong{
-    padding: 25px;
-}
-
-.boxes3:hover{
-    background-color: #2F4F4F;
     color: white;
-    border-radius: 10px;
-
 }
-.boxes2:hover{
-    background-color: #2F4F4F;
+.general{
+    background-color: #c32e4c;
     color: white;
+    text-align: center;
+    margin-top: 15px;
     border-radius: 10px;
-}
-.boxes:hover{
-    background-color: #2F4F4F;
-    color: white;
-    border-radius: 10px;
-
+    grid-area: general;
+    border: 1px solid black;
+    padding: 50px;
 }
 
 
-form{
-    width: 800px;
-    margin-top: 25px;
-    margin-right: 250px;
-    margin-left: 400px;
 
-}
+
+
 

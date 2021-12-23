@@ -14,6 +14,8 @@ import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
 
+import {HttpClientModule} from "@angular/common/http";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,11 +24,12 @@ import { FooterComponent } from './footer/footer.component';
     ServiceComponent,
     ContactComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, FormsModule, NgbModule
+    AppRoutingModule, FormsModule, NgbModule,HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],

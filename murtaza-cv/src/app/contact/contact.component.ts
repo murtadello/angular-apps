@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,14 +6,20 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
-export class ContactComponent  {
+export class ContactComponent  implements OnInit{
 
 
-  log(x){
-    console.log(x);
+  constructor(private http: HttpClient) {}
+
+  ngOnInit(){
+
+  }
+
+
+
   }
 
   
 
   
-}
+

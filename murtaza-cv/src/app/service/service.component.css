@@ -1,5 +1,4 @@
 .container {
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 2fr 2fr;
@@ -10,10 +9,14 @@
     "computer-graphic networking assembly"
     ;
     grid-gap: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
      
 }
 
 .para{
+    background-color: rgb(71, 71, 199);
+    border-radius: 10px;
+    color: white;
     text-align: center;
     grid-area: parag;
     padding-left: 10px;
@@ -25,7 +28,7 @@
     border-bottom-left-radius: 30px;
     grid-area: graphics;
     padding-left: 10px;
-    background-color: #F0FFFF;
+   
 }
 
 .development{
@@ -33,14 +36,13 @@
     border-bottom-left-radius: 30px;
     grid-area: development;
     padding-left: 10px;
-    background-color: #F0F8FF;
+    
 }
 .programmin{
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
     grid-area: language;
     padding-left: 10px;
-    background-color: #F8F8FF;
 }
 img{
     width: 350px;
@@ -52,7 +54,6 @@ img{
     grid-area: assembly;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
-    background-color: #F5F5F5;
     padding-left: 10px;
 }
 
@@ -60,7 +61,6 @@ img{
     grid-area: networking;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
-    background-color: #FFF8DC;
     padding-left: 10px;
 }
 
@@ -68,11 +68,13 @@ img{
     grid-area: computer-graphic;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
-    background-color: #FDF5E6;
+
     padding-left: 10px;
 }
 
 .graphics:hover{
+    background-color: rgb(71, 71, 199);
+    color: white;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
     border-top-right-radius: 0px;
@@ -81,6 +83,8 @@ img{
 
 }
 .development:hover{
+    background-color: rgb(71, 71, 199);
+    color: white;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
     border-top-right-radius: 0px;
@@ -89,6 +93,8 @@ img{
 
 }
 .programmin:hover{
+    background-color: rgb(71, 71, 199);
+    color: white;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
     border-top-right-radius: 0px;
@@ -97,6 +103,8 @@ img{
     
 }
 .assembly:hover{
+    background-color: rgb(71, 71, 199);
+    color: white;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
     border-top-right-radius: 0px;
@@ -106,6 +114,8 @@ img{
 }
 
 .networking:hover{
+    background-color: rgb(71, 71, 199);
+    color: white;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
     border-top-right-radius: 0px;
@@ -114,6 +124,8 @@ img{
 
 }
 .computer-graphic:hover{
+    background-color: rgb(71, 71, 199);
+    color: white;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
     border-top-right-radius: 0px;

@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./aboutme.component.css']
 })
 export class AboutmeComponent implements OnInit {
+  english: string ="English B2";
+  deutsch: string ="Deutsch C1";
+  persisch: string = "Muttersprache";
 
   constructor() { }
 
