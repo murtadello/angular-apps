@@ -1,0 +1,31 @@
+.container{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    grid-template-areas: 
+        "progresss technic "
+        "progresss technic "
+        "progresss technic "
+        "progresss technic "
+        "progresss technic "
+        "progresss technic "
+        "progresss technic "
+        "progresss technic "
+        
+        ;
+    
+}
+
+.technical{
+    grid-area: progresss;
+    
+}
+.bar{
+    margin-top: 40px;
+    grid-area: technic;
+}
+
+.title{
+    margin-left: 310px;
+
+}

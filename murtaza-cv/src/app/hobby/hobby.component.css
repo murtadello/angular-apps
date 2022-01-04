@@ -1,0 +1,26 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "football wandern velofahren";
+
+}
+
+.football{
+    grid-area: football;
+}
+.wandern{
+    grid-area: wandern;
+}
+.velofahren{
+    grid-area: velofahren;
+}
+img{
+    width: 250px;
+    border-radius: 50%;
+    height: 200px;
+}
+
+.title{
+    margin-left: 310px;
+}

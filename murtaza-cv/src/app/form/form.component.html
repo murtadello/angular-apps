@@ -9,7 +9,7 @@
         <label for="message">Message</label>
         <textarea class="form-control" required ngModel name ="msg"></textarea>
         <br>
-        <button type="submit" class="btn btn-primary"> Submit</button>
+        <button type="submit" class="btn btn-info"> Submit</button>
         <br>
 
         <button class="btn btn-primary" (click)="onFetchPosts()">Fetch Post</button>
@@ -29,7 +29,11 @@
             </li>
 
         </ul>
-        <p *ngIf="isFetching">Loading ...</p>
+        <p *ngIf="isFetching && !error">Loading ...</p>
+        <div class="alert alert-danger" *ngIf ="error">
+            <h1>An Error Occured !</h1>
+            <p>{{ error }}</p>
+        </div>
     </div>
     </div>
 </div>

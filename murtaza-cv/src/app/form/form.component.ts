@@ -12,6 +12,7 @@ import { PostsService } from './post.service';
 export class FormComponent implements OnInit {
   loadedPosts: Post[] = [];
   isFetching = false;
+  error = null;
 
   constructor(private http: HttpClient, private postsService:PostsService) { }
 
@@ -21,12 +22,13 @@ export class FormComponent implements OnInit {
       this.isFetching = false;
       this.loadedPosts = posts;
 
+    }, error =>{
+      this.error = error.message;
     });
   }
   onCreatePost(postData: Post){
     //send Http request
     this.postsService.createAndStorePost(postData.fname, postData.lname, postData.email, postData.msg);
-
   }
 
   onFetchPosts(){
@@ -35,7 +37,8 @@ export class FormComponent implements OnInit {
     this.postsService.fetchPost().subscribe(posts =>{
       this.isFetching = false;
       this.loadedPosts = posts;
-
+    }, error =>{
+      this.error = error.message;
     });
     
 
@@ -46,8 +49,4 @@ export class FormComponent implements OnInit {
       this.loadedPosts = [];
     });
   }
-
-
-  
-
 }

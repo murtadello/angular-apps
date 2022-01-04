@@ -1,0 +1,29 @@
+.container{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 0.9fr 5fr;
+    grid-template-areas:
+        "language scrollb"
+        "language scrollb"
+        "language scrollb"
+        "language scrollb";
+}
+
+
+.language{
+    grid-area: language;
+    
+    
+}
+
+.scroll{
+    grid-area: scrollb;
+    
+}
+p{
+    font-weight: bold;
+    font-size: 15px;
+}
+h3{
+    margin-left: 310px;
+}

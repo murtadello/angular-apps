@@ -17,6 +17,9 @@ import { FooterComponent } from './footer/footer.component';
 import {HttpClientModule} from "@angular/common/http";
 import { GalleryComponent } from './gallery/gallery.component';
 import { FormComponent } from './form/form.component';
+import { SkillsComponent } from './skills/skills.component';
+import { TechnicalComponent } from './technical/technical.component';
+import { HobbyComponent } from './hobby/hobby.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +32,9 @@ import { FormComponent } from './form/form.component';
     FooterComponent,
     GalleryComponent,
     FormComponent,
+    SkillsComponent,
+    TechnicalComponent,
+    HobbyComponent,
     
   ],
   imports: [
