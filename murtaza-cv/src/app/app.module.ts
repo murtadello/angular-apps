@@ -15,6 +15,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
 
 import {HttpClientModule} from "@angular/common/http";
+import { GalleryComponent } from './gallery/gallery.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import {HttpClientModule} from "@angular/common/http";
     ContactComponent,
     HomeComponent,
     FooterComponent,
+    GalleryComponent,
+    FormComponent,
     
   ],
   imports: [

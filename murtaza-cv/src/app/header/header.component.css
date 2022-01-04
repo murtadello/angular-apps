@@ -1,7 +1,5 @@
 .nav-tabs{
-
     padding: 25px;
-    
 }
 a{
     font-weight: bold;
@@ -13,5 +11,9 @@ a{
 
 a:hover{
     cursor: pointer;    
+}
+
+ul{
+    justify-content: center;
 }
 
