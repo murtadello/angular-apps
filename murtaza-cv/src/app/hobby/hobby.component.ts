@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hobby.component.css']
 })
 export class HobbyComponent implements OnInit {
-
+  showHobbies = true;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+
+  hideHobbies(){
+    this.showHobbies= false;
+  }
+  showHobby(){
+    this.showHobbies = true;
   }
 
 }

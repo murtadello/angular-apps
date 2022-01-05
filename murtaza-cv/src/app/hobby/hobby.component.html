@@ -1,7 +1,10 @@
 <div class="title">
     <h3>Meine Hobbies</h3>
+    <button class="btn btn-primary" (click)="showHobby()">Show Hobbies</button>
+    <hr>
+    <button class="btn btn-primary" (click)="hideHobbies()">Hide Hobbies</button>
 </div>
-<div class="container">
+<div class="container" *ngIf="showHobbies">
     <div class="football">
         <h4>Football</h4>
         <img src="../../assets/b.jpg" alt="">

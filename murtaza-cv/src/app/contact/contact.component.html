@@ -26,9 +26,13 @@
             <h4>mohammadi@kmu-informatik.ch</h4>
         </div>
     </div>
+    <div class="show">
+        <button class="btn btn-info" (click)="showFormular()">Show Formular</button>
+        <hr>
+        <button class="btn btn-danger" (click)="hideFormulars()">Hide Formular</button>
 
-
-    <app-form></app-form>
+    </div>
+    <app-form *ngIf="hideFormular"></app-form>
 
 
 

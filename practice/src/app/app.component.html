@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <label for="">Username</label>
+    <input type="text" [(ngModel)]="username">
+    <p>{{ username }}</p>
+    <button [disabled] = "username === '' " [ngClass]="{dynamic: color==='blue'}">Reset User</button>
+    <button (click)="hideParagraph()">Hide Paragraph</button>
+    <button (click)="showParagra()">Show Paragraph</button>
+    <p *ngIf="showParagraph">This is a paragraph</p>
+    <p [ngClass]="{dynamic: color==='blue'}">Change the style of Paragraph using Dierectives </p>
+  </div>
+  <app-assignment></app-assignment>
+</div>
