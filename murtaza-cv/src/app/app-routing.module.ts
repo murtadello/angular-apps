@@ -4,6 +4,7 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ServiceComponent } from './service/service.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 
 const routes: Route[] = [
@@ -11,6 +12,7 @@ const routes: Route[] = [
   {path: 'home', component: HomeComponent},
   {path: 'about', component: AboutmeComponent},
   {path: 'service', component: ServiceComponent},
+  {path: 'gallery', component: GalleryComponent},
   {path: 'contact', component: ContactComponent}
   
 

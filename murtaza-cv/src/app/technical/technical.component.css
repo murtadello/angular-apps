@@ -17,11 +17,12 @@
 }
 
 .technical{
+    
     grid-area: progresss;
     
 }
 .bar{
-
+    height: 1px;
     grid-area: technic;
 }
 

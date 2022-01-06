@@ -1,18 +1,54 @@
 <div class="container">
     <form #postForm="ngForm" (ngSubmit)="onCreatePost(postForm.value)">
+
+        <!--First name Textfield-->
         <label for="fname">First Name</label>
-        <input type="text" class="form-control" required ngModel name="fname">
+        <input 
+        type="text" 
+        class="form-control" 
+        required ngModel name="fname"
+        #fname="ngModel">
+        <span class="help-block" *ngIf="!fname.valid && fname.touched"> Please enter your First name</span>
+
+
+        <!--Last name Textfield-->
         <label for="lname">Last Name</label>
-        <input type="text" class="form-control" required ngModel name="lname">
+        <input 
+        type="text" 
+        class="form-control" 
+        required ngModel 
+        name="lname"
+        #lname ="ngModel">
+        <span class="help-block" 
+        *ngIf="!lname.valid && lname.touched">
+        Please Enter your Last name </span>
+
+        <!--Email Input Field -->
         <label for="email">Email</label>
-        <input type="email" class="form-control" required ngModel name ="email">
+        <input 
+        type="email" 
+        class="form-control" 
+        required email ngModel 
+        name ="email"
+        #email="ngModel">
+        <span class="help-block" 
+        *ngIf="!email.valid && email.touched"
+        >Please enter a valid email !
+        </span>
+
+        <!--Textarea -->
         <label for="message">Message</label>
         <textarea class="form-control" required ngModel name ="msg"></textarea>
         <br>
-        <button type="submit" class="btn btn-info"> Submit</button>
-        <br>
 
-        <button class="btn btn-primary" (click)="onFetchPosts()">Fetch Post</button>
+        <!--Buttons-->
+        <button type="submit" class="btn btn-info" [disabled]="!postForm.valid"> Submit</button>
+        <br>
+        <button 
+        class="btn btn-primary" 
+        (click)="onFetchPosts()"
+        >
+        Fetch Post</button>
         <br>
         <button class="btn btn-danger" (click)="onClearPosts()">Delete</button>  
     </form>
@@ -35,5 +71,6 @@
             <p>{{ error }}</p>
         </div>
     </div>
-    </div>
+
+</div>
 </div>

@@ -72,14 +72,14 @@ img{
     margin-right: 25px;
 }
 h5{
-    background-color: rgb(71, 71, 199);
+    background-color: rgb(0, 0, 0);
     color: white;
     padding: 5px;
     border-radius: 10px;
 }
 
 h3,h4{
-    background-color: rgb(71, 71, 199);
+    background-color: rgb(6, 6, 7);
     color: white;
     padding: 10px;
     border-radius: 10px;
