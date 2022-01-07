@@ -4,7 +4,7 @@
     <hr>
     <button class="btn btn-primary" (click)="hideHobbies()">Hide Hobbies</button>
 </div>
-<div class="container" *ngIf="showHobbies">
+<div class="container" *ngIf="!showHobbies">
     <div class="football">
         <h4>Football</h4>
         <img src="../../assets/b.jpg" alt="">
@@ -17,4 +17,5 @@
         <h4>Velofahren</h4>
         <img src="../../assets/bb.jpg" alt="">
     </div>
+
 </div>

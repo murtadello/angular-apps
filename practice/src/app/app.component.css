@@ -1,4 +1,3 @@
-.dynamic{
-    color: white;
-    background-color: black;
+.col{
+    border: 1px solid red;
 }

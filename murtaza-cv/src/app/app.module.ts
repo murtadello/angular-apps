@@ -21,6 +21,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { TechnicalComponent } from './technical/technical.component';
 import { HobbyComponent } from './hobby/hobby.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +36,7 @@ import { HobbyComponent } from './hobby/hobby.component';
     SkillsComponent,
     TechnicalComponent,
     HobbyComponent,
+
     
   ],
   imports: [

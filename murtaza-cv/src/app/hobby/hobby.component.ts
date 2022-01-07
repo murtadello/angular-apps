@@ -14,10 +14,10 @@ export class HobbyComponent implements OnInit {
 
 
   hideHobbies(){
-    this.showHobbies= false;
+    this.showHobbies= true;
   }
   showHobby(){
-    this.showHobbies = true;
+    this.showHobbies = false;
   }
 
 }

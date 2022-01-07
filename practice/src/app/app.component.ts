@@ -6,16 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'practice';
-
-  username ='';
-  color='blue';
-  showParagraph = true;
-  hideParagraph(){
-    this.showParagraph = false;
-  }
-  showParagra(){
-    this.showParagraph= true;
-  }
+  
 
 }
