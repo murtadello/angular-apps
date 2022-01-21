@@ -32,40 +32,6 @@
     color: #fff;
 
 }
-
-
-.container{
-    
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-        "adress general";
-}
-
-.adress{
-    background-color: #c32e4c;
-    text-align: center;
-    margin-top: 15px;
-    border: 1px solid black;
-    padding: 50px;
-    justify-content: center;
-    grid-area: adress;
-    border-radius: 10px;
-    color: white;
-}
-.general{
-    background-color: #c32e4c;
-    color: white;
-    text-align: center;
-    margin-top: 15px;
-    border-radius: 10px;
-    grid-area: general;
-    border: 1px solid black;
-    padding: 50px;
-}
-
-
 .show{
     margin-left: 310px;
 }

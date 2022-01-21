@@ -5,6 +5,7 @@ import { ServiceComponent } from './service/service.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { BeitragComponent } from './beitrag/beitrag.component';
 
 
 const routes: Route[] = [
@@ -13,6 +14,7 @@ const routes: Route[] = [
   {path: 'about', component: AboutmeComponent},
   {path: 'service', component: ServiceComponent},
   {path: 'gallery', component: GalleryComponent},
+  {path: 'travel', component: BeitragComponent},
   {path: 'contact', component: ContactComponent}
   
 

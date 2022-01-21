@@ -5,15 +5,18 @@ form  {
     
 }
 
-input, textarea{
+input{
     border-radius: 10px;
     height: 40px;
 
 }
 textarea{
+    border-radius: 10px;
     resize: none;
 }
+
 
 input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched{
     border: 1px solid red;
 }
+

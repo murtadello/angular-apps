@@ -8,22 +8,19 @@
         "language scrollb"
         "language scrollb";
 }
-
-
 .language{
-    grid-area: language;
-    
-    
+    grid-area: language;   
 }
-
 .scroll{
     grid-area: scrollb;
     
 }
 p{
-    font-weight: bold;
     font-size: 15px;
 }
 h3{
     margin-left: 310px;
+}
+.progress{
+    margin-left: 75px;
 }

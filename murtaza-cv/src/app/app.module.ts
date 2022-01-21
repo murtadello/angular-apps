@@ -20,7 +20,8 @@ import { FormComponent } from './form/form.component';
 import { SkillsComponent } from './skills/skills.component';
 import { TechnicalComponent } from './technical/technical.component';
 import { HobbyComponent } from './hobby/hobby.component';
-
+import { CardComponent } from './card/card.component';
+import { BeitragComponent } from './beitrag/beitrag.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,9 @@ import { HobbyComponent } from './hobby/hobby.component';
     SkillsComponent,
     TechnicalComponent,
     HobbyComponent,
+    CardComponent,
+    BeitragComponent,
+
 
     
   ],

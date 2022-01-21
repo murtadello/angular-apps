@@ -1,8 +1,10 @@
 .container{
+    margin-left: 500px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
-        "football wandern velofahren";
+        "football wandern velofahren"
+        "schwimmen ski reading";
 
 }
 
@@ -15,9 +17,18 @@
 .velofahren{
     grid-area: velofahren;
 }
+.schwimmen{
+    grid-area: schwimmen;
+}
+.ski{
+    grid-area: ski;
+}
+.read{
+    grid-area: reading;
+}
 img{
     width: 250px;
-    border-radius: 50%;
+    border-radius: 10%;
     height: 200px;
 }
 

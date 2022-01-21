@@ -15,6 +15,8 @@ class Foo implements Person {
 }
 
 
+
+
 var Murtaza : Person = new Foo();
 
 let someObj = {
@@ -25,6 +27,11 @@ let someObj = {
 
 
 Murtaza = someObj;
+
+
+
+
+
 
 
 

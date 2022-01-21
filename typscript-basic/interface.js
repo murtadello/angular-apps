@@ -7,6 +7,9 @@ var Foo = /** @class */ (function () {
     return Foo;
 }());
 var Murtaza = new Foo();
-Murtaza.firstName = "Murtaza";
-Murtaza.lastName = "Mohammadi";
-console.log(Murtaza.getFullName());
+var someObj = {
+    firstName: "Murtaza",
+    lastName: "Mohammadi",
+    getFullName: function () { return "Test"; }
+};
+Murtaza = someObj;
