@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BeitragComponent implements OnInit {
 
+  showTravel: boolean = false;
+
+  clsName = 'paragraph'
+
   constructor() { }
 
   ngOnInit(): void {
+    this.showTravel = true;
+  }
+  showTrave(){
+    this.showTravel = true;
   }
 
+  hideTravel(){
+    this.showTravel = false;
+  }
 }

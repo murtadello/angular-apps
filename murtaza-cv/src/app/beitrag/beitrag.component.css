@@ -43,3 +43,18 @@ p{
     font-size: 1.5rem;
     
 }
+
+button{
+    margin-left: 500px;
+    margin-top: 25px;
+}
+
+
+
+.paragraph{
+    color: red;
+    font-weight: bold;
+    
+}
+
+

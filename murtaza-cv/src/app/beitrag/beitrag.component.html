@@ -1,10 +1,14 @@
-<div class="container">
+
+<button class="btn btn-primary" (click)="showTrave()">Show Visited Countries</button>
+
+<button class="btn btn-danger" (click)="hideTravel()">Hide Visited Countries</button>
+<div class="container" *ngIf="showTravel">
     <div class="photo">
         <img src="../../assets/images/1 (4).jpeg" alt="">
     </div>
     <div class="text">
         <h2>Paris</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Aliquid sunt rem quam veniam debitis laboriosam quos iusto,
             voluptatum reprehenderit modi suscipit nobis facere ipsum
             perferendis possimus magnam obcaecati molestias iste?
@@ -22,7 +26,7 @@
     </div>
     <div class="para">
         <h2>Zurich Switzerland</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Aliquid sunt rem quam veniam debitis laboriosam quos iusto,
             voluptatum reprehenderit modi suscipit nobis facere ipsum
             perferendis possimus magnam obcaecati molestias iste?
@@ -35,8 +39,6 @@
             voluptatum reprehenderit modi suscipit nobis facere ipsum
             perferendis possimus magnam obcaecati molestias iste?</p>
     </div>
-
-
     <div class="berlin">
         <img src="../../assets/images/1 (5).jpeg" alt="">
     </div>
@@ -56,3 +58,4 @@
             perferendis possimus magnam obcaecati molestias iste?</p>
     </div>
 </div>
+<app-footer></app-footer>
