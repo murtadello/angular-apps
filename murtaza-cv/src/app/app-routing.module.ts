@@ -8,6 +8,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { BeitragComponent } from './beitrag/beitrag.component';
 
 
+
 const routes: Route[] = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
@@ -16,11 +17,7 @@ const routes: Route[] = [
   {path: 'gallery', component: GalleryComponent},
   {path: 'travel', component: BeitragComponent},
   {path: 'contact', component: ContactComponent}
-  
-
-
 ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

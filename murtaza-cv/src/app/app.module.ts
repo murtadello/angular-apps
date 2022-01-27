@@ -23,6 +23,7 @@ import { HobbyComponent } from './hobby/hobby.component';
 import { CardComponent } from './card/card.component';
 import { BeitragComponent } from './beitrag/beitrag.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +40,7 @@ import { BeitragComponent } from './beitrag/beitrag.component';
     HobbyComponent,
     CardComponent,
     BeitragComponent,
-
+ 
 
     
   ],

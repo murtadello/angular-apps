@@ -6,11 +6,31 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./beitrag.component.css']
 })
 export class BeitragComponent implements OnInit {
-
   showTravel: boolean = false;
+  clsName = 'paragraph';
+  colorName='black';
+  
+  users = [
+    {id: 1, name: 'john'},
+    {id: 2, name: 'Fatima'},
+    {id: 3, name: 'Rostami'},
+    {id: 4, name: 'Mohammadi'},
+    {id: 5, name: 'Ahmad'},
+    {id: 6, name: 'Jawad'}
+  ];
+  customers ={
+    userId:20,
+    firstName: 'FATIMA',
+    lastName: 'Rostami',
+    DOB:'07/23/1994',
+    salary: 6000
+  }
 
-  clsName = 'paragraph'
-
+  message =[
+    'You are alway in my heart Fatima',
+    'Will you marry me?',
+    'If yes, please come to Zurich'
+  ]
   constructor() { }
 
   ngOnInit(): void {
@@ -22,5 +42,9 @@ export class BeitragComponent implements OnInit {
 
   hideTravel(){
     this.showTravel = false;
-  }
+  } 
+  focusMessage(){
+    console.log('This is just a focus event');
+    
+  }  
 }

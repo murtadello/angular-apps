@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hobby.component.css']
 })
 export class HobbyComponent implements OnInit {
-  showHobbies = true;
+  showHobbies = false;
   constructor() { }
 
   ngOnInit(): void {
