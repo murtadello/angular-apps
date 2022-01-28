@@ -1,0 +1,63 @@
+.container {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "start start"
+    "intro vid"
+    "swiss sight"
+    "taraneh music";
+  grid-gap: 3rem;
+}
+.start {
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+  grid-area: start;
+  font-size: 15px;
+  
+}
+.intro {
+  grid-area: intro;
+  margin-right: 10px;
+  text-align: justify;
+}
+
+.vid,
+.sight,
+.music {
+  grid-area: vid;
+  margin-top: 50px;
+  width: 450px;
+}
+.swiss {
+  grid-area: swiss;
+}
+.sight {
+  grid-area: sight;
+}
+.stylefont {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+.taraneh {
+  grid-area: taraneh;
+}
+.music {
+  grid-area: music;
+}
+.link{
+  color: white;
+}
+
+.intro:hover,
+.swiss:hover,
+.taraneh:hover{
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}

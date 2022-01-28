@@ -7,11 +7,8 @@
         "image paragraph"
         "image   skills"
         "image skills"
-        "image skills";
-
-    
+        "image skills";  
 }
-
 .image{
     
     padding: 25px;
@@ -31,9 +28,6 @@ img{
     grid-area: skills;
     
 }
-
-
-
 /* Ende Layout about me */
 
 .experien-container{
