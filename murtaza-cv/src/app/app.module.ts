@@ -23,6 +23,9 @@ import { HobbyComponent } from './hobby/hobby.component';
 import { CardComponent } from './card/card.component';
 import { BeitragComponent } from './beitrag/beitrag.component';
 import { BusinessComponent } from './business/business.component';
+import { ObservableComponent } from './observable/observable.component';
+import { ContactsComponent } from './contacts/contacts.component';
+
 
 
 @NgModule({
@@ -41,7 +44,10 @@ import { BusinessComponent } from './business/business.component';
     HobbyComponent,
     CardComponent,
     BeitragComponent,
-    BusinessComponent
+    BusinessComponent,
+    ObservableComponent,
+    ContactsComponent,
+ 
   ],
   imports: [
     BrowserModule,

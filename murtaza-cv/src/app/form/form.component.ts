@@ -49,4 +49,5 @@ export class FormComponent implements OnInit {
       this.loadedPosts = [];
     });
   }
+
 }

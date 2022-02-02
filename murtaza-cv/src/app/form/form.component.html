@@ -1,6 +1,5 @@
 <div class="container">
     <form #postForm="ngForm" (ngSubmit)="onCreatePost(postForm.value)">
-
         <!--First name Textfield-->
         <label for="fname">First Name</label>
         <input 
@@ -9,8 +8,6 @@
         required ngModel name="fname"
         #fname="ngModel">
         <span class="help-block" *ngIf="!fname.valid && fname.touched"> Please enter your First name</span>
-
-
         <!--Last name Textfield-->
         <label for="lname">Last Name</label>
         <input 
@@ -22,7 +19,6 @@
         <span class="help-block" 
         *ngIf="!lname.valid && lname.touched">
         Please Enter your Last name </span>
-
         <!--Email Input Field -->
         <label for="email">Email</label>
         <input 
@@ -50,9 +46,8 @@
         >
         Fetch Post</button>
         <br>
-        <button class="btn btn-danger" (click)="onClearPosts()">Delete</button>  
+        <button class="btn btn-danger" (click)="onClearPosts()">Delete</button>     
     </form>
-
     <div class="row">
         <div class="col-xs-12 col-md-6 col-md-offset-3">
         <p *ngIf ="loadedPosts.length < 1 && !isFetching">No Post Available</p>
@@ -71,6 +66,5 @@
             <p>{{ error }}</p>
         </div>
     </div>
-
 </div>
 </div>
