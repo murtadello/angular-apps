@@ -1,0 +1,56 @@
+    1  whoami
+        - tell the username
+    2  echo $0
+        - will show you on which directory are you in
+    3  history
+        -list all command which you used so far
+    4  apt
+        advanced package manger 
+    5  nano
+        -nano is text editor on linux 
+        -if you type nano, it will show you which version of nano installed on your pc
+    6  apt list
+        -list all packages 
+    7  apt install nano
+        - it will install nano text editro
+    10  apt updated
+        - will update all packages
+   11  apt remove nano
+        - will remove the nano editor
+   12  python
+        -see whether you installed python on your machine
+   13  ls
+        - list directory
+   14  pwd
+        -show the path 
+   15  ls -1
+        -list the directories
+   16  cd 
+        - you can change the directory
+   17  cd ..
+        - you can go one level up
+   18  cd ~
+        -change from root to home directory
+   19  mkdir 
+        -create repository
+   20  mv test docker
+        - rename, move files or folders
+   21  touch hello.text
+        - will create a file with the name of hello.txt 
+   22  mv hello.txt hello-docker.txt
+        - will rename the file
+   23  rm -r file2.txt
+        - will remove the file 
+   24  nano file1.txt
+        - will create the file and you can type your content into your file which you are goint to create 
+   25  cat file1.txt
+        will read the conent of the file
+   26  more file.txt
+        -will show more content of the file
+   27  less file.txt 
+        - will show less content of the file 
+   28  cat file1.txt > file2.txt
+        read the content from file1 and write into file2
+   29  cat file1.txt file2.txt > combined.txt
+        - write the content of fiel1 and file2 into combined.txt
+        
