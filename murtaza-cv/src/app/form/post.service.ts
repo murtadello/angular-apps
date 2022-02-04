@@ -46,5 +46,4 @@ export class PostsService {
       'https://crud-example-4c453-default-rtdb.firebaseio.com/posts.json'
     );
   }
-  
 }

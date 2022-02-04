@@ -11,6 +11,8 @@ export class ObservableComponent implements OnInit {
   data: Observable<any>;
   data2: Observable<any>;
 
+  data3: Observable<any>
+
   constructor() { }
 
   ngOnInit(): void {
@@ -23,11 +25,6 @@ export class ObservableComponent implements OnInit {
       setTimeout(() => {
         observer.next('Processing');
       }, 5000);
-
-      setTimeout(() => {
-        observer.complete();
-      }, 10000);
-
       setTimeout(() => {
         observer.next('After Completion');
       }, 12000);
@@ -38,8 +35,12 @@ export class ObservableComponent implements OnInit {
       this.orderStatus = val;
     });
     this.data2.subscribe(val2 =>{
-      console.log('Second Subscription');
-      ;
+      this.orderStatus = val2;
+      
+    });
+    this.data3.subscribe(val3 =>{
+      this.orderStatus = val3;
+
     })
 
 

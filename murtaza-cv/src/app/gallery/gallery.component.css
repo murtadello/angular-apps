@@ -6,3 +6,10 @@
 h1{
     text-align: center;
 }
+
+.txt{
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(209, 15, 80);
+
+}

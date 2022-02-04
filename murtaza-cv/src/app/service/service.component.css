@@ -21,6 +21,14 @@
     text-align: center;
     grid-area: parag;
     padding-left: 10px;
+
+    
+}
+.para>p{
+    font-size: 25px;
+}
+h4{
+    font-weight: bold;
     
 }
 
