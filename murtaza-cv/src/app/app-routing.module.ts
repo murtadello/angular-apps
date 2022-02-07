@@ -10,6 +10,7 @@ import { BusinessComponent } from './business/business.component';
 import { componentFactoryName } from '@angular/compiler';
 import { ObservableComponent } from './observable/observable.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { AnimationComponent } from './animation/animation.component';
 
 
 
@@ -23,7 +24,8 @@ const routes: Route[] = [
   {path: 'travel', component: BeitragComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'observable', component: ObservableComponent},
-  {path: 'contacts', component: ContactsComponent}
+  {path: 'contacts', component: ContactsComponent},
+  {path:'animation', component: AnimationComponent}
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

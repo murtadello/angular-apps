@@ -1,14 +1,19 @@
+import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-beitrag',
   templateUrl: './beitrag.component.html',
   styleUrls: ['./beitrag.component.css']
+  
 })
 export class BeitragComponent implements OnInit {
   showTravel: boolean = false;
   clsName = 'paragraph';
   colorName='black';
+
+  state = 'normal';
+
   
   users = [
     {id: 1, name: 'john'},
@@ -25,12 +30,6 @@ export class BeitragComponent implements OnInit {
     DOB:'07/23/1994',
     salary: 6000
   }
-
-  message =[
-    'You are alway in my heart Fatima',
-    'Will you marry me?',
-    'If yes, please come to Zurich'
-  ]
   constructor() { }
 
   ngOnInit(): void {
@@ -46,5 +45,8 @@ export class BeitragComponent implements OnInit {
   focusMessage(){
     console.log('This is just a focus event');
     
-  }  
+  } 
+
+
+  
 }

@@ -88,6 +88,7 @@ import { Component } from '@angular/core';
     ]),
   ]
 })
+
 export class AppComponent {
   state = 'normal';
   wildState = 'normal';
@@ -109,4 +110,5 @@ export class AppComponent {
     onDelete(item){
       this.list.splice(this.list.indexOf(item), 1);
     }
+    
 }

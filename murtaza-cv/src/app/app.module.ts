@@ -25,7 +25,8 @@ import { BeitragComponent } from './beitrag/beitrag.component';
 import { BusinessComponent } from './business/business.component';
 import { ObservableComponent } from './observable/observable.component';
 import { ContactsComponent } from './contacts/contacts.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AnimationComponent } from './animation/animation.component';
 
 
 @NgModule({
@@ -47,11 +48,12 @@ import { ContactsComponent } from './contacts/contacts.component';
     BusinessComponent,
     ObservableComponent,
     ContactsComponent,
+    AnimationComponent,
  
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, FormsModule, NgbModule,HttpClientModule
+    AppRoutingModule, FormsModule, NgbModule,HttpClientModule, BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

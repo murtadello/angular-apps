@@ -1,0 +1,19 @@
+<nav>
+    <button type="button" (click)="toggle()">Toggle Open/Close</button>
+  </nav>
+  
+  <div [@openClose]="isOpen ? 'open' : 'closed'" class="open-close-container">
+    <p>The box is now {{ isOpen ? 'Open' : 'Closed' }}!</p>
+  </div>
+
+  <div [@changeColor] ="isColor">
+    <p>
+      This is just a paragraph which is blue colored and also is bold and italic 
+    </p>
+  </div>
+
+  <button class="btn btn-info" (click)="changeColor()">Change Color</button>
+
+
+
+  
