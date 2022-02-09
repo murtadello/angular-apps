@@ -52,4 +52,5 @@ export class AnimationComponent implements OnInit {
     this.isColor = 'blue';
   }
 
+  
 }

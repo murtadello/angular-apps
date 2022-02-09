@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
+
 import { Post } from './post.model';
 import { PostsService } from './post.service';
 
@@ -24,6 +25,7 @@ export class FormComponent implements OnInit {
 
     }, error =>{
       this.error = error.message;
+      
     });
   }
   onCreatePost(postData: Post){
@@ -40,8 +42,6 @@ export class FormComponent implements OnInit {
     }, error =>{
       this.error = error.message;
     });
-    
-
   }
   onClearPosts(){
     //send Http request

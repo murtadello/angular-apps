@@ -14,25 +14,25 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 var Person = /** @class */ (function () {
-    function Person() {
+    function Person(name) {
+        this.name = name;
     }
-    Person.prototype.greet = function () {
-        console.log("hey there!");
+    Person.prototype.display = function () {
+        console.log(this.name);
     };
     return Person;
 }());
-var Programmer = /** @class */ (function (_super) {
-    __extends(Programmer, _super);
-    function Programmer() {
-        return _super !== null && _super.apply(this, arguments) || this;
+var Employee3 = /** @class */ (function (_super) {
+    __extends(Employee3, _super);
+    function Employee3(name, code) {
+        var _this = _super.call(this, name) || this;
+        _this.empCode = code;
+        return _this;
     }
-    Programmer.prototype.greet = function () {
-        console.log("Hello World !");
+    Employee3.prototype.find = function (name) {
+        return new Employee3(name, 1);
     };
-    Programmer.prototype.greetLikeNormalPeople = function () {
-        _super.prototype.greet.call(this);
-    };
-    return Programmer;
+    return Employee3;
 }(Person));
-var aProgrammer = new Programmer();
-aProgrammer.greet();
+var obj5 = new Employee3("James", 100);
+obj5.display(); //James

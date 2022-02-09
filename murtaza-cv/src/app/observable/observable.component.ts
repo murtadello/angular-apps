@@ -11,7 +11,7 @@ export class ObservableComponent implements OnInit {
   data: Observable<any>;
   data2: Observable<any>;
 
-  data3: Observable<any>
+  data3: Observable<any>;
 
   constructor() { }
 
