@@ -11,7 +11,7 @@ export class PostsService {
       fname: fname,
       lname: lname,
       email: email,
-      msg: msg
+      msg: msg,
     };
     this.http
       .post(
