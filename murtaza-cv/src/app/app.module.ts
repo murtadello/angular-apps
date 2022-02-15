@@ -23,8 +23,6 @@ import { HobbyComponent } from './hobby/hobby.component';
 import { CardComponent } from './card/card.component';
 import { BeitragComponent } from './beitrag/beitrag.component';
 import { BusinessComponent } from './business/business.component';
-import { ObservableComponent } from './observable/observable.component';
-import { ContactsComponent } from './contacts/contacts.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AnimationComponent } from './animation/animation.component';
 
@@ -46,8 +44,6 @@ import { AnimationComponent } from './animation/animation.component';
     CardComponent,
     BeitragComponent,
     BusinessComponent,
-    ObservableComponent,
-    ContactsComponent,
     AnimationComponent,
  
   ],

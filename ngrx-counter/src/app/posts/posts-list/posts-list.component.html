@@ -20,7 +20,7 @@
                     <td>{{post.description}}</td>
                     <td>
                         <a class="btn btn-primary" [routerLink]="['edit', post.id] ">Update</a>&nbsp;
-                        <button class="btn btn-primary">Delete</button>
+                        <button class="btn btn-primary" (click)="onDeletePost(post.id)">Delete</button>
                     </td>
                 </tr>
             </tbody>
@@ -29,6 +29,4 @@
     <div class="col-md-4">
         <router-outlet></router-outlet>
     </div>
-
-    
 </div>

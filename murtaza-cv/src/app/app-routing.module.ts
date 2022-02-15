@@ -8,8 +8,6 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { BeitragComponent } from './beitrag/beitrag.component';
 import { BusinessComponent } from './business/business.component';
 import { componentFactoryName } from '@angular/compiler';
-import { ObservableComponent } from './observable/observable.component';
-import { ContactsComponent } from './contacts/contacts.component';
 import { AnimationComponent } from './animation/animation.component';
 
 
@@ -23,8 +21,6 @@ const routes: Route[] = [
   {path: 'business', component: BusinessComponent},
   {path: 'travel', component: BeitragComponent},
   {path: 'contact', component: ContactComponent},
-  {path: 'observable', component: ObservableComponent},
-  {path: 'contacts', component: ContactsComponent},
   {path:'animation', component: AnimationComponent}
 ];
 @NgModule({
