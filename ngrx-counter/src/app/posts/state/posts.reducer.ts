@@ -1,4 +1,5 @@
 
+import { identifierModuleUrl } from "@angular/compiler";
 import { createReducer, on} from "@ngrx/store";
 import { update } from "src/app/counter/state/counter.actions";
 import { addPost, deletePost, updatePost } from "./posts.actions";
@@ -32,9 +33,7 @@ const _postsReducer = createReducer(
             posts: updatedPost
 
         }
-    })
-
-
+    }),
 );
 export function postsReducer(state, action) {
     return _postsReducer(state, action);
