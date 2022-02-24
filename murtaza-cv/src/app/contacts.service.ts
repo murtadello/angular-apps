@@ -22,7 +22,7 @@ export class ContactsService {
   }
 
   displayMessage(){
-    console.log('calling');
+    console.log('Calling from the name of Customer')
     
   }
 }

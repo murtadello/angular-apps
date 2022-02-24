@@ -11,6 +11,3 @@ export const addPost = createAction(ADD_POST_ACTION, props<{post:Post} >() );
 export const updatePost = createAction(UPDATE_POST_ACTION, props<{post: Post}>());
 
 export const deletePost = createAction(DELETE_POST_ACTION, props<{id: string}>());
-
-
-

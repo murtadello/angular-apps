@@ -25,7 +25,6 @@ export class FormComponent implements OnInit {
 
     }, error =>{
       this.error = error.message;
-      
     });
   }
   onCreatePost(postData: Post){

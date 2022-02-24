@@ -22,7 +22,6 @@ export class PostsService {
         console.log(responseData);
       });
   }
-
   fetchPost() {
     return this.http
       .get<{ [key: string]: Post }>(

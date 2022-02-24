@@ -9,9 +9,6 @@ import { BeitragComponent } from './beitrag/beitrag.component';
 import { BusinessComponent } from './business/business.component';
 import { componentFactoryName } from '@angular/compiler';
 import { AnimationComponent } from './animation/animation.component';
-
-
-
 const routes: Route[] = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
@@ -21,7 +18,7 @@ const routes: Route[] = [
   {path: 'business', component: BusinessComponent},
   {path: 'travel', component: BeitragComponent},
   {path: 'contact', component: ContactComponent},
-  {path:'animation', component: AnimationComponent}
+  {path:'animation', component: AnimationComponent},
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

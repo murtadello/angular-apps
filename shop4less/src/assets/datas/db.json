@@ -1,0 +1,33 @@
+{
+    "products": [
+      { "id": 1, 
+        "name": "Hp Headphone",
+        "category_id": 2,
+        "description": "Production description goes here ",
+        "product_image": "img_path",
+        "price": 100,
+        "is_available": true,
+        "rating": 4,
+        "reviews":120,
+        "vendor_name": "Seller 1",
+        "warranty": 2
+      },
+
+      { "id": 2, 
+        "name": "Apple Headphone",
+        "category_id": 2,
+        "description": "Production description goes here ",
+        "product_image": "img_path",
+        "price": 12,
+        "is_available": true,
+        "rating": 5,
+        "reviews":130,
+        "vendor_name": "Seller 2",
+        "warranty": 23
+      }
+    ],
+    "comments": [
+      { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "profile": { "name": "typicode" }
+  }

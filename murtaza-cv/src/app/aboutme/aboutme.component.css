@@ -30,17 +30,14 @@
     
    
 }
-
 .contact{
     grid-area: contact;
     height: 350px;
 }
-
 .ausbildung{
     grid-area: ausbildung;
     height: 350px;
 }
-
 .skills{
     grid-area: skills;
     
@@ -69,5 +66,7 @@ h2{
     color: white;
     border-radius: 5px;
 }
+
+
 
 

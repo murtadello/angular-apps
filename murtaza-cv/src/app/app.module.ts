@@ -10,7 +10,7 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ServiceComponent } from './service/service.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
 
@@ -25,6 +25,7 @@ import { BeitragComponent } from './beitrag/beitrag.component';
 import { BusinessComponent } from './business/business.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AnimationComponent } from './animation/animation.component';
+
 
 
 @NgModule({
@@ -45,11 +46,16 @@ import { AnimationComponent } from './animation/animation.component';
     BeitragComponent,
     BusinessComponent,
     AnimationComponent,
- 
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, FormsModule, NgbModule,HttpClientModule, BrowserAnimationsModule
+    AppRoutingModule, 
+    FormsModule, 
+    NgbModule,
+    HttpClientModule, 
+    BrowserAnimationsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
