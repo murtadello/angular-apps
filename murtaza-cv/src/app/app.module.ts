@@ -62,3 +62,4 @@ import { AnimationComponent } from './animation/animation.component';
   
 })
 export class AppModule { }
+

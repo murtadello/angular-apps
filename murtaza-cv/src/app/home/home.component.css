@@ -9,6 +9,15 @@
         "image skills"
         "image skills";  
 }
+
+
+.container{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 25px;
+    text-overflow: none;
+    text-decoration: dashed;
+}
 .image{
     
     padding: 25px;
