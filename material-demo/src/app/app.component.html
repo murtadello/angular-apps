@@ -1,0 +1,44 @@
+<h1>Checkbox </h1>
+<mat-checkbox
+#showDetails
+[checked]="isChecked"
+(change)="onChange($event)"
+>Show Details</mat-checkbox>
+<br>
+<h1>Radio Button</h1>
+<mat-radio-group value="0">
+    <mat-radio-button value="1">Male</mat-radio-button>
+<mat-radio-button value="0" >Female</mat-radio-button>
+  </mat-radio-group>
+<br>
+<h1>Select</h1>
+<mat-form-field>
+    <mat-select placeholder="Favorite food">
+      <mat-option *ngFor="let food of foods" [value]="food.value">
+        {{food.viewValue}}
+      </mat-option>
+    </mat-select>
+</mat-form-field>
+<h1>Input</h1>
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Favorite food" value="Sushi">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width">
+      <textarea matInput placeholder="Leave a comment"></textarea>
+    </mat-form-field><br>
+    <mat-form-field class="example-full-width">
+        <input matInput value="Biryani">
+      </mat-form-field>
+  </form>
+  <br>
+
+  <h3>Button</h3>
+  <button mat-button>Click me!</button><br>
+  <button mat-flat-button>Click me!</button><br>
+  <button mat-raised-button>Click me!</button><br>
+  <button mat-stroked-button>Click me!</button><br>
+  <button mat-fab>Click me!</button><br>
+  <button mat-mini-fab>Click me!</button><br>
+  <button mat-fab>Click me!</button><br>

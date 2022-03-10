@@ -9,14 +9,15 @@
         "image skills"
         "image skills";  
 }
-
-
 .container{
     display: grid;
     grid-template-columns: auto;
     padding: 25px;
     text-overflow: none;
     text-decoration: dashed;
+    text-align: center;
+    justify-content: baseline;
+    
 }
 .image{
     
@@ -50,10 +51,8 @@ img{
     "experience education"
     "experience education"
     "experience education"
-    "experience education";
-    
+    "experience education"; 
 }
-
 .experience{
     grid-area: experience;
     border: 1px solid gray;
@@ -61,7 +60,6 @@ img{
     border-radius: 10px;
 
 }
-
 .education{
     grid-area: education;
     border: 1px solid gray;
@@ -86,4 +84,3 @@ h3,h4{
     padding: 10px;
     border-radius: 10px;
 }
-
