@@ -12,17 +12,20 @@ export class AppComponent {
   title = 'material-demo';
   isChecked = true;
 
-  
-
+  showSpinner = false;
+  opened = false;
   foods: Food[] = [
     {value: 'steak-0', viewValue: 'Steak'},
     {value: 'pizza-1', viewValue: 'Pizza'},
     {value: 'tacos-2', viewValue: 'Tacos'}
   ];
-
-
   onChange($event:any){
-    console.log($event)
-
+    console.log($event);
+  }
+  loadData(){
+    this.showSpinner = true ;
+    setTimeout(() => {
+      this.showSpinner = false;
+    }, 5000);
   }
 }
