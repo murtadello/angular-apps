@@ -6,14 +6,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'SimpleTech';
-  success_msg = false;
+  title = 'Welcom to ARC Tutorial';
+  person = {
+    firstName: 'Angular',
+    LastName : 'JS'
+  }
+  isUserLoggedIn = true;
 
+
+  daysOfTheWeek = 'Montag';
+    
+
+
+
+
+  success_msg = false;
   divColor ="orange";
   txtColor = "blue";
-
   styleClsProp = 'c3';
-
+  conditionClsProp = 'c5';
   contacts = [
     {
       'firstName': 'Angualr',
@@ -31,11 +42,10 @@ export class AppComponent {
       'contactId': 50000
     },
 
-  ]
-
-
-  season = 'Murtaz';
-
-
-  
+  ];
+  showMessage = 'This is Databinding';
+  season = 'Spring';
+  changeMessage(){
+    this.showMessage = 'Change successfuly !';
+  }
 }

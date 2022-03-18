@@ -1,10 +1,39 @@
-<h1> {{title}}</h1>
 
-<div *ngIf="success_msg; then update_msg; else error_msg" class="bg-info">
-    
+<h1> {{ title}}</h1>
+
+<h1>Property binding using ngIf</h1>
+<div *ngIf="isUserLoggedIn">
+    <div [ngClass]="'c1'">{{person.firstName}} {{person.LastName}}</div>
 </div>
+<h1>Property Binding using ngFor</h1>
+    <table>
+        <tr>
+            <th>ContactId</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+        </tr>
+        <tr *ngFor="let contact of contacts">
+            <td>{{ contact.firstName}}</td>
+            <td>{{contact.lastName}}</td>
+            <td>{{contact.contactId}}</td>
+        </tr>
+    </table>
+<h1>Property Binding using ngSwitch</h1>
+    <div [ngSwitch]="daysOfTheWeek">
+        <div *ngSwitchCase = "'Montag'">{{daysOfTheWeek}}</div>
+    </div>
+
+<h1>Attribute Databinding</h1>
+<div *ngFor="let contact of contacts">
+    <div [innerHTML]="contact.firstName"></div>
+    <div [innerHTML]="contact.lastName"></div>
+</div>  
 
 
+
+<!--
+<div *ngIf="success_msg; then update_msg; else error_msg" class="bg-info">   
+</div>
 <ng-template #update_msg>
     user added successfully 
 </ng-template>
@@ -51,4 +80,13 @@
 <div [ngClass]="'c1 c2'">This is ngClass example</div>
 <div [ngClass]="styleClsProp">This is ngClass example </div>
 
+<div [ngClass]="conditionClsProp === 'c4' ? 'c4' : 'c5'">Condition Class ngIf</div>
+
+<div [ngClass] ="{c4: true, c5: true}"></div>
+
+<h1>Data Binding</h1>
+<p>{{ showMessage }}</p>
+
+<button (click)="changeMessage()" class="btn btn-primary">Change Message</button>
+-->
 <router-outlet></router-outlet>
