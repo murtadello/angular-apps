@@ -1,0 +1,54 @@
+<h1> {{title}}</h1>
+
+<div *ngIf="success_msg; then update_msg; else error_msg" class="bg-info">
+    
+</div>
+
+
+<ng-template #update_msg>
+    user added successfully 
+</ng-template>
+
+
+<ng-template #error_msg>
+    User was not able to add 
+</ng-template>
+
+
+<h1>Learning ngFor </h1>
+<div *ngFor="let contact of contacts; index as i; first as f">
+    <ul>
+        <li>{{i}} {{contact.firstName}}</li>
+        <li>{{i}} {{contact.lastName}}</li>
+        <li>{{i}} {{contact.contactId}}</li>
+    </ul>
+    
+</div>
+
+
+<h1>Learning ngSwitch</h1>
+<div [ngSwitch]="season">
+    <div *ngSwitchCase="'Spring'">Spring</div>
+    <div *ngSwitchCase="'Summer'">Summmer</div>
+    <div *ngSwitchCase="'Fall'">Fall</div>
+    <div *ngSwitchCase="'Winter'">Winter</div>
+
+    <div *ngSwitchDefault>Invalid Month</div>
+    
+    
+</div>
+
+<h1>Learning ngStyle</h1>
+
+<div [ngStyle]="{'background-color': 'green', 'color':'white'}">This is blue div</div>
+
+<div [ngStyle]="{'background-color': divColor}">Div with dynamic value style property</div>
+
+<div [ngStyle]="{'color': txtColor === 'blue' ? 'blue': 'green' }">div with conditional ngStyle</div>
+
+<h1>Learning ngClass</h1>
+
+<div [ngClass]="'c1 c2'">This is ngClass example</div>
+<div [ngClass]="styleClsProp">This is ngClass example </div>
+
+<router-outlet></router-outlet>

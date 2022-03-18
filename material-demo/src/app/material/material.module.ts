@@ -14,6 +14,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { FormsModule } from '@angular/forms';
 import {MatMenuModule} from '@angular/material/menu';
 import { MatListModule} from '@angular/material/list';
+import {MatGridListModule}  from '@angular/material/grid-list';
+import {MatExpansionModule} from '@angular/material/expansion';
 const MaterialComponents = [
   MatCheckboxModule,
     MatRadioModule,
@@ -29,7 +31,9 @@ const MaterialComponents = [
     MatSidenavModule,
     FormsModule,
     MatMenuModule,
-    MatListModule
+    MatListModule,
+    MatGridListModule,
+    MatExpansionModule
 ]
 
 @NgModule({

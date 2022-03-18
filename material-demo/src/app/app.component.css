@@ -14,3 +14,12 @@ mat-sidenav{
     background-color: gray;
     width: 200px;
 }
+mat-grid-tile{
+    background-color: lightblue;
+}
+mat-expansion-panel{
+    background-color: rgb(98, 245, 245);
+}
+.example-spacer {
+    flex: 1 1 auto;
+}

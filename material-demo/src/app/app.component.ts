@@ -28,4 +28,15 @@ export class AppComponent {
       this.showSpinner = false;
     }, 5000);
   }
+
+
+  donothingDisplay(){
+    this.showSpinner = true;
+  }
 }
+
+
+
+
+
+
