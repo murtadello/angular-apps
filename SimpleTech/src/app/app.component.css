@@ -25,3 +25,8 @@
     border: 1px solid black;
     padding: 25px;
 }
+.centerText {
+    text-align: center;
+    font-size: 25px;
+    background-color: aqua;
+}
