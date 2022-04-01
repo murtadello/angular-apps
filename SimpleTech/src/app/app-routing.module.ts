@@ -1,17 +1,44 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { Routes, RouterModule, Route } from '@angular/router';
 import { AddLoansComponent } from './add-loans/add-loans.component';
 import { LoanTypesComponent } from './loan-types/loan-types.component';
+import { EditComponentComponent } from './contacts/edit-component/edit-component.component';
 import { LoansComponent } from './loans/loans.component';
+import { ListProfileComponent } from './profile/list-profile/list-profile.component';
+import { AdminGuard } from './admin.guard';
+import { SuperAdminGuard } from './super-admin.guard';
+import { AdminComponent } from './admin/admin.component';
+import { AdminManageComponent } from './admin-manage/admin-manage.component';
+import { AdminEditComponent } from './admin-edit/admin-edit.component';
+import { AdminDeleteComponent } from './admin-delete/admin-delete.component';
+import { AdminAcGuard } from './admin-ac.guard';
+import { FormsComponent } from './forms/forms.component';
 
-const routes: Routes = [
-  {path: 'loans', component: LoansComponent},
-  {path: 'loans/add-loan', component: AddLoansComponent, outlet:'addloan'},
-  {path: 'loan-types', component: LoanTypesComponent}
-];
-
+const routes : Routes = [
+  {path:'loans', component:LoansComponent, canActivate: [AdminGuard]},
+  {path:'profile', component: ListProfileComponent},
+  {path:'forms', component: FormsComponent},
+  {path:'admin', 
+  canActivate: [SuperAdminGuard],
+  canActivateChild: [AdminAcGuard],
+  children: [
+    {
+      path:'',
+      component: AdminComponent, 
+    },
+    {path:'manage', component: AdminManageComponent},
+    {path:'edit', component: AdminEditComponent},
+    {path:'delete', component: AdminDeleteComponent}
+  ]
+}
+]
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  declarations: [],
+  imports: [
+    CommonModule,
+    RouterModule.forRoot(routes)
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
