@@ -1,23 +1,23 @@
-<form #contacForm = "ngForm" (submit)="addContact(contacForm)">
-    <label for="Firsname" class="form-control">FristName</label>
-    <input type="text" [(ngModel)] ="firstname" name="firstname" required minlength ="10" class="form-control">
-    <br>
-    <label for="pass" class="form-control">Password</label>
-    <input type="password" [(ngModel)] ="pass" name="pass" required class="form-control">
-    <br>
-    <input type="checkbox" [(ngModel)] ="terms" name="terms" required> Aceept terms and condition
-   <br>
-    <label for="country" class="form-control">country</label>
-   <select  [(ngModel)] ="country" name="country" class="form-control">
-       <option value="1">Afghanistan</option>
-       <option value="2">Switzerland</option>
-       <option value="3">Germany</option>
-   </select>
-   <br>
-   <label for="message" class="form-control">Message</label>
-   <textarea [(ngModel)] ="msg" name="msg" class="form-control"></textarea>
-   <br>
-    <button type="submit" class="btn btn-primary" [disabled]="!contacForm.valid">Add Contact</button>
+<form #contacForm="ngForm" (submit)="addContact(contacForm)">
+  <label for="Firsname" class="form-control">FristName</label>
+  <input type="text" [(ngModel)]="firstname" name="firstname" required minlength="10" class="form-control">
+  <br>
+  <label for="pass" class="form-control">Password</label>
+  <input type="password" [(ngModel)]="pass" name="pass" required class="form-control">
+  <br>
+  <input type="checkbox" [(ngModel)]="terms" name="terms" required> Aceept terms and condition
+  <br>
+  <label for="country" class="form-control">country</label>
+  <select [(ngModel)]="country" name="country" class="form-control">
+    <option value="1">Afghanistan</option>
+    <option value="2">Switzerland</option>
+    <option value="3">Germany</option>
+  </select>
+  <br>
+  <label for="message" class="form-control">Message</label>
+  <textarea [(ngModel)]="msg" name="msg" class="form-control"></textarea>
+  <br>
+  <button type="submit" class="btn btn-primary" [disabled]="!contacForm.valid">Add Contact</button>
   <button class="btn btn-link" (click)="resetForm(contacForm)">Reset Form </button>
 
 </form>

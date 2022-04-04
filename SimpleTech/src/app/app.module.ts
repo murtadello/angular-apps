@@ -4,7 +4,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import { ProfileModule } from './profile/profile.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoansComponent } from './loans/loans.component';
 import { LoanTypesComponent } from './loan-types/loan-types.component';
 import { AddLoansComponent } from './add-loans/add-loans.component';
@@ -14,6 +14,7 @@ import { AdminEditComponent } from './admin-edit/admin-edit.component';
 import { AdminDeleteComponent } from './admin-delete/admin-delete.component';
 import { AdminManageComponent } from './admin-manage/admin-manage.component';
 import { FormsComponent } from './forms/forms.component';
+import { ReactivformsComponent } from './reactivforms/reactivforms.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FormsComponent } from './forms/forms.component';
     AdminEditComponent,
     AdminDeleteComponent,
     AdminManageComponent,
-    FormsComponent
+    FormsComponent,
+    ReactivformsComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,8 @@ import { FormsComponent } from './forms/forms.component';
     MatButtonModule,
     ProfileModule,
     FormsModule,
-    AppRoutingModule,    
+    AppRoutingModule, 
+    ReactiveFormsModule   
   ],
   providers: [
     

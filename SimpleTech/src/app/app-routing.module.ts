@@ -14,11 +14,13 @@ import { AdminEditComponent } from './admin-edit/admin-edit.component';
 import { AdminDeleteComponent } from './admin-delete/admin-delete.component';
 import { AdminAcGuard } from './admin-ac.guard';
 import { FormsComponent } from './forms/forms.component';
+import { ReactivformsComponent } from './reactivforms/reactivforms.component';
 
 const routes : Routes = [
   {path:'loans', component:LoansComponent, canActivate: [AdminGuard]},
   {path:'profile', component: ListProfileComponent},
   {path:'forms', component: FormsComponent},
+  {path:'reactive', component: ReactivformsComponent},
   {path:'admin', 
   canActivate: [SuperAdminGuard],
   canActivateChild: [AdminAcGuard],

@@ -1,0 +1,14 @@
+<form [formGroup] = "reactivForm" >
+
+    <label for="" class="form-control">Loan Name</label>
+    <input type="text" formControlName="loanName" class="form-control">
+
+    <label for="" class="form-control">loanType</label>
+    <input type="text" formControlName ="loanType" class="form-control">
+
+    <label for="" class="form-control">loanDescription</label>
+    <textarea formControlName="loanDescription" class="form-control"></textarea>
+
+
+    <button (click)="addLoanType()" class="btn btn-primary">Add Loan</button>
+</form>
