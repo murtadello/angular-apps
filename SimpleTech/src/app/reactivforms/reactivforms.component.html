@@ -1,14 +1,26 @@
-<form [formGroup] = "reactivForm" >
+<form [formGroup]="reactivForm">
 
     <label for="" class="form-control">Loan Name</label>
     <input type="text" formControlName="loanName" class="form-control">
+    <span class="text-danger" *ngIf="reactivForm.get('loanName').hasError('required')
+    && reactivForm.get('loanName').touched">Loan required
+    </span>
+
+    <span class="text-danger" *ngIf="reactivForm.get('loanName').hasError('minlength')
+    && reactivForm.get('loanName').touched"> Loan name should be minimum of 10 charcter
+    </span>
 
     <label for="" class="form-control">loanType</label>
-    <input type="text" formControlName ="loanType" class="form-control">
-
+    <input type="text" formControlName="loanType" class="form-control">
     <label for="" class="form-control">loanDescription</label>
     <textarea formControlName="loanDescription" class="form-control"></textarea>
 
-
-    <button (click)="addLoanType()" class="btn btn-primary">Add Loan</button>
+    <span class="text-danger" *ngIf="reactivForm.get('loanDescription').hasError('minlength')
+    && reactivForm.get('loanName').touched"> loan should be minimum 30 character
+    </span>
+    <hr>
+    <button (click)="addLoanType()" class="btn btn-primary" [disabled]="!reactivForm.valid">Add Loan</button>
+    <hr>
+    <button (click)="resetForm()" class="btn btn-primary">Reset Form</button>
+    
 </form>
