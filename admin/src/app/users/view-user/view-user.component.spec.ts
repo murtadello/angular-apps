@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ReactivformsComponent } from './reactivforms.component';
+import { ViewUserComponent } from './view-user.component';
 
-describe('ReactivformsComponent', () => {
-  let component: ReactivformsComponent;
-  let fixture: ComponentFixture<ReactivformsComponent>;
+describe('ViewUserComponent', () => {
+  let component: ViewUserComponent;
+  let fixture: ComponentFixture<ViewUserComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ReactivformsComponent ]
+      declarations: [ ViewUserComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ReactivformsComponent);
+    fixture = TestBed.createComponent(ViewUserComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

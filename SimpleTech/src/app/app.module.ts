@@ -13,8 +13,8 @@ import { AdminComponent } from './admin/admin.component';
 import { AdminEditComponent } from './admin-edit/admin-edit.component';
 import { AdminDeleteComponent } from './admin-delete/admin-delete.component';
 import { AdminManageComponent } from './admin-manage/admin-manage.component';
-import { FormsComponent } from './forms/forms.component';
-import { ReactivformsComponent } from './reactivforms/reactivforms.component';
+import { CustomersModule } from './customers/customers.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,18 +25,20 @@ import { ReactivformsComponent } from './reactivforms/reactivforms.component';
     AdminComponent,
     AdminEditComponent,
     AdminDeleteComponent,
-    AdminManageComponent,
-    FormsComponent,
-    ReactivformsComponent
+    AdminManageComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     MatButtonModule,
+    CustomersModule,
     ProfileModule,
     FormsModule,
+    CustomersModule,
     AppRoutingModule, 
-    ReactiveFormsModule   
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
     
