@@ -15,6 +15,8 @@ import { AdminDeleteComponent } from './admin-delete/admin-delete.component';
 import { AdminManageComponent } from './admin-manage/admin-manage.component';
 import { CustomersModule } from './customers/customers.module';
 import { HttpClientModule } from '@angular/common/http';
+import { ItemListComponent } from './item-list/item-list.component';
+import { NgContentComponent } from './ng-content/ng-content.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { HttpClientModule } from '@angular/common/http';
     AdminComponent,
     AdminEditComponent,
     AdminDeleteComponent,
-    AdminManageComponent
+    AdminManageComponent,
+    ItemListComponent,
+    NgContentComponent
   ],
   imports: [
     BrowserModule,
