@@ -8,11 +8,20 @@ import { Component, OnInit } from '@angular/core';
 export class BusinessComponent implements OnInit {
   colorName='black';
 
+  customers = ["Ahmad", "Ali", "Didar"];
+
+
   constructor() { }
 
   ngOnInit(): void {
     
   }
+
+  addItem(){
+    this.customers.push("Frahnaz");
+  }
+
+
   
  
 }
