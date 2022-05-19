@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "id": 9,
+      "firstName": "Maryam",
+      "lastName": "Murtazawi",
+      "email": "maryam@gmail.com",
+      "mobile": "3675757",
+      "salary": "50000000"
+    },
+    {
+      "id": 10,
+      "firstName": "Murtaza",
+      "lastName": "Mohammadi",
+      "email": "murtaza@gmail.com",
+      "mobile": "0797554425",
+      "salary": "25.000"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
