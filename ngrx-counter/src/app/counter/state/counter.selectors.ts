@@ -12,3 +12,7 @@ export const getCounter = createSelector(getCounterState, (state) =>{
 export const getChannelName = createSelector(getCounterState, (state)=>{
     return state.channelName;
 })
+
+export const getTitle = createSelector(getCounterState, (state) =>{
+    return state.title;
+})

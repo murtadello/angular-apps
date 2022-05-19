@@ -26,5 +26,6 @@ export class CustomCounterInputComponent implements OnInit {
   }
   onChangChannelName(){
     this.store.dispatch(changeChannelName());
-  } 
+  }
+  
 }

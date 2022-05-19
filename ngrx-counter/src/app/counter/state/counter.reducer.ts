@@ -1,9 +1,15 @@
 
 import { createReducer, on} from "@ngrx/store"
-
-
-
-import { decrement, increment, reset, update, customincrement,changeChannelName} from "./counter.actions"
+import { 
+    decrement, 
+    increment, 
+    reset, 
+    update, 
+    customincrement,
+    changeChannelName, 
+    changeTitle
+} 
+from "./counter.actions"
 import { initialState } from "./counter.state"
 
 const _counterReducer = createReducer(
@@ -45,9 +51,13 @@ const _counterReducer = createReducer(
             ...state, 
             channelName: 'Taraneh Music Center'
         }
-    })
-
-    
+    }),
+    on(changeTitle, (state)=>{
+        return {
+            ...state,
+            title: 'React Framework'
+        }
+    }),
     
 
 );

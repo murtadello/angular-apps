@@ -9,6 +9,7 @@ import { CounterComponent } from "./counter/counter.component";
 import { CustomCounterInputComponent } from "./custom-counter-input/custom-counter-input.component";
 import { counterReducer } from "./state/counter.reducer";
 import { COUNTER_STATE_NAME } from "./state/counter.selectors";
+import { ChangeTitleComponent } from './change-title/change-title.component';
 
 const routes : Routes =[
     {path:'', component: CounterComponent},
@@ -19,6 +20,7 @@ const routes : Routes =[
         CounterOutputComponent,
         CounterButtonsComponent,
         CustomCounterInputComponent,
+        ChangeTitleComponent,
     ],
     imports: [CommonModule,FormsModule,  RouterModule.forChild(routes), StoreModule.forFeature(COUNTER_STATE_NAME, counterReducer)],
 })
