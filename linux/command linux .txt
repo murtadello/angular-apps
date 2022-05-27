@@ -1,0 +1,27 @@
+Linux OS Tutorial short notes
+
+Get started with Linux os
+1 download and install linux
+2 download virtual box 
+	- allow us to run virtual machine 
+
+commands linux
+
+ls | lists the files that are in a directory
+ls –a | shows all files in a directory
+ls / | shows the contents of the root directory
+pwd | Prints the name of the directory you on in
+clear | clears the screen
+cd / | Changes directory to root
+cd ~ | changes to home directory
+touch <file name. extension> | Makes a file in current directory
+cat <file name. extension> | prints the contents of a file on the screen
+mkdir <Directory Name> | Makes a directory
+mv <file name> <directory name> | Moves a file to a directory
+rm <file name> | removes a file
+rmdir <directory name> | removes an empty directory
+man <command> | Displays how a command can be used
+rm –r | Removed a directory and its contents
+rm –rf / | Deletes everything under root (kills the system)
+mkdir -p superfolder/child/subchild/subsubchidl
+

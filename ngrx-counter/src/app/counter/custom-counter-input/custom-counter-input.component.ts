@@ -19,6 +19,7 @@ export class CustomCounterInputComponent implements OnInit {
 
   ngOnInit(): void {
     this.channelName$ = this.store.select(getChannelName);
+    console.log(this.channelName$);
   }
 
   onAdd(){
@@ -27,5 +28,7 @@ export class CustomCounterInputComponent implements OnInit {
   onChangChannelName(){
     this.store.dispatch(changeChannelName());
   }
+
+
   
 }

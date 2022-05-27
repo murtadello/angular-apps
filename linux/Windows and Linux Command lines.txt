@@ -1,0 +1,216 @@
+The command Lines for Windows Operating System:
+
+-ls 
+list all the directories
+
+- get-help 
+full give us more info about the commands
+
+- ls -Force 
+will list the hidden files
+
+- Pwd (print working directory)
+it will tell you where you are
+
+-cd desktop (change directory)
+it will tell you to change the directory
+
+-cd .. 
+it will take you to the parent directory 
+
+-cd delta
+
+-mkdir nameoffolder
+
+will create for your a folder
+
+- with arrow down an up key you will get the history commands 
+
+- Ctrl-R will show you the commands
+
+- cp *.jpg C:\users\MurtazaMohammadi\Desktop\udemy
+- cp 'name of the file' C:\users\MurtazaMohammadi\Desktop\udemy
+
+copy something and past to the path which you provide it 
+
+- mv filename newfilename
+rename the file 
+
+- mv filename + the path where you want to store the file 
+will move the file
+
+-rm Filename
+
+will remove the file
+
+-rm filename force
+will remove the file which you dont allow to delte
+
+-rm file recurse
+will remove the file
+
+-cat filename.txt
+
+will show the conetent of the file
+
+Enter slow jump
+Space one page 
+
+
+-cat fruits.txt -Head 19
+
+this will show us the ten lines of the file 
+
+-cat fruits.txt -Tail 10
+
+this will show us the l0 last of the file 
+
+- GetLocalUser
+ list all the users
+
+-net user cesar pa5sw0rd /add/logonpasswordchg:yes
+
+the user must change the password once he login 
+
+- net user andrea /del
+ delete the user andrea
+
+-Remove-LocalUser cesar
+
+will remove the user cesar
+
+
+-icacls c:\users\murtazamohammadi\desktop
+list the users with permission that it has 
+
+-  eventvmr.msc
+we can see the event occures on the computer 
+
+
+------------------------------------------------------------------------
+
+The command Lines for Linux:
+
+-ls /
+list the directories
+
+-ls --help
+list all command lines for us 
+
+-ls l /
+list all information about the directories
+
+-ls -a
+list all files and hidden files 
+
+-pwd 
+show the path where you are 
+
+- cd /home/cindy/Documents
+- cd ../Documents
+you can change the path with cd
+
+-mkdir my_cool_folder
+-mkdir my/ cool/ folder
+- mkdir 'my cool folder'
+make a folder for you
+
+- history
+-up and down arrow key
+- Ctrl -R
+will list the history of commands
+
+-cp readme.txt ~/Desktop
+-cp *.png ~/Desktop
+
+will copy from you folder in the desktop
+
+-mv readme.txt bikhanme.txt
+rename the file 
+
+-mv *_document.txt ~/Desktop
+
+will move the file 
+
+- rm filename.txt
+
+remove the file 
+
+- sudo useradd juan
+ will add a new user juan
+
+- sudo userdel juan
+will remove the user juan 
+
+- ls -l ~/my_file
+list the users with permission on a file or folder 
+
+
+-ls -l my_cool_file
+list the permission on a folder
+
+
+- chmod u-x my_cool_file 
+this command says that we wanna set permission to the folder 
+
+-chmod u+rx my_cool_file 
+set permission read and executable on the folder 
+
+-chmod 754 my_cool_file
+
+change the owner of the file/folder
+
+
+- passwd
+change the password 
+
+
+- ls /var/log
+
+to view the log on linux
+
+
+imaging Software:
+
+dd if = /dev/sdd of =~ /Desktop/my_usb_image.img bs=100M
+
+This command take an image file from /dev/sdd to Desktop 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

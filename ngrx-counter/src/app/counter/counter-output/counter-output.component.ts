@@ -15,6 +15,7 @@ export class CounterOutputComponent implements OnInit {
   constructor(private store: Store<AppState>) { }
 
   ngOnInit(): void {
-    this.counter$ = this.store.select(getCounter)
+    this.counter$ = this.store.select(getCounter);
+    console.log(this.counter$)
   }
 }

@@ -22,6 +22,8 @@ export class PostsListComponent implements OnInit {
       this.store.dispatch(deletePost({id}));
     }
   }
+
+  
 }
 
 
