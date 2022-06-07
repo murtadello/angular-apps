@@ -29,8 +29,6 @@ sudo apt-get update > update the system
 sudo apt-get upgrade > upgrade the system
 apt-cache search editor > list editor which you can install on your pc
 sudo apt-get install tmux > install the tmux editor 
-sudo apt-get remove tmux> remove the tmux app
-
 
 
 
