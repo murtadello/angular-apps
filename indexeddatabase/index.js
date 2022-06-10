@@ -9,12 +9,8 @@ const request = indexedDB.open("CarsDatabase" ,1);
 
 request.onerror = function (event) {
     console.log("An Error occured !");
-    console.log(event);
-    
-    
+    console.log(event);  
 }
-
-
 request.onupgradeneeded = function () {
     const db = request.result;
     const store = db.createObjectStore("cars", {keyPath: "id"});
@@ -38,8 +34,12 @@ request.onsuccess = function() {
     store.put({id: 5, color: "Pink", make: "Ferrarie"})
 
     const idQuery = store.get(4);
-    const colorQuery = colorIndex.getAll("Red");
+    const colorQuery = colorIndex.getAll(["Red"]);
     const colorMakeQuery = makeModelIndex.get(["Blue","BMW"]);
+    const subaru = store.get(4);
+    const deleteCar = store.delete(1);
+    const redCarKey = store.getKey(["Red"]);
+    
 
     idQuery.onsuccess = function (){
         console.log('idQuery', idQuery.result);
@@ -50,6 +50,34 @@ request.onsuccess = function() {
     colorMakeQuery.onsuccess = function () {
         console.log('colorMakeQuery', colorMakeQuery.result);
     }
+    // update the color 
+    subaru.onsuccess = function(){
+        subaru.result.color = "Purple";
+        store.put(subaru.result);
+    }
+
+    // delete the color
+    deleteCar.onsuccess = function () {
+        console.log("car has been deleted successfully");
+    }
+
+    redCarKey.onerror = function(){
+         const deleteCar = store.delete(redCarKey.result);
+         deleteCar.onsuccess = function(){
+             console.log("Red car has been removed ")
+         }
+    }
+
+    redCarKey.onsuccess = function(){
+        console.log("Car has been removed !");
+        
+    }
+
+
+    
+
+
+
 
     transaction.oncomplete = function () {
         db.close();

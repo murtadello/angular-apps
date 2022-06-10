@@ -12,7 +12,7 @@ ls –a | shows all files in a directory
 ls / | shows the contents of the root directory
 pwd | Prints the name of the directory you on in
 clear | clears the screen
-cd / | Changes directory to root
+cd / | Changes directory to rootls
 cd ~ | changes to home directory
 touch <file name. extension> | Makes a file in current directory
 cat <file name. extension> | prints the contents of a file on the screen
@@ -30,6 +30,15 @@ sudo apt-get upgrade > upgrade the system
 apt-cache search editor > list editor which you can install on your pc
 sudo apt-get install tmux > install the tmux editor 
 sudo apt-get remove tmux> remove the tmux app
+
+
+
+Online Jobs:
+Typing the name and earn money
+https://www.talentdesire.com/online-typing-jobs/
+
+
+
 
 
 
