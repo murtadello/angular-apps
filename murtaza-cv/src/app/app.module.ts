@@ -21,6 +21,9 @@ import { BeitragComponent } from './beitrag/beitrag.component';
 import { BusinessComponent } from './business/business.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AnimationComponent } from './animation/animation.component';
+import { StoreModule } from '@ngrx/store';
+import { counterReducer } from './store/app.reducer';
+import { MyCounterComponent } from './my-counter/my-counter.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +43,7 @@ import { AnimationComponent } from './animation/animation.component';
     BeitragComponent,
     BusinessComponent,
     AnimationComponent,
+    MyCounterComponent
 
   ],
   imports: [
@@ -49,7 +53,8 @@ import { AnimationComponent } from './animation/animation.component';
     NgbModule,
     HttpClientModule, 
     BrowserAnimationsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    StoreModule.forRoot({count: counterReducer})
   ],
   providers: [],
   bootstrap: [AppComponent],
